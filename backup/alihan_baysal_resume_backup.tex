@@ -1,0 +1,148 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Alihan Baysal} & Email : \href{mailto:baysal.alihan@outlook.com}{baysal.alihan@outlook.com}\\
+  \href{https://alihanbaysal.com}{alihanbaysal.com} $|$ \href{https://linkedin.com/in/alihanbaysal}{linkedin.com/in/alihanbaysal} $|$ \href{https://github.com/alihanbays}{github.com/alihanbays} & Mobile : +1-541-740-9292 \\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Oregon State University}{Corvallis, OR}
+      {Bachelor of Science in Computer Science}{Sept. 2019 -- Mar. 2024}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Blue Cross of Idaho (via In Time Tec)}{Los Angeles, CA}
+      {Full Stack Engineer}{Oct. 2024 - Present}
+      \resumeItemListStart
+        \resumeItem{HIPAA-Compliant Healthcare APIs}
+          {Architected RESTful APIs using .NET Core and Entity Framework Core with OAuth2.0 authentication for HIPAA-compliant patient data systems, designed complex database schemas optimizing multi-table queries for healthcare workflows on AWS (Lambda, RDS, S3).}
+        \resumeItem{FHIR Healthcare Interoperability}
+          {Engineered HL7 FHIR-compliant data transformation services enabling seamless healthcare data exchange across external systems, designed robust API contracts with comprehensive data validation for critical patient information processing.}
+        \resumeItem{Enterprise Data Migration}
+          {Oversaw end-to-end ETL pipeline migrating 10M+ patient records from on-premises databases to AWS RDS using AWS Glue and Database Migration Service (DMS), ensuring data integrity and maintaining real-time synchronization for production healthcare systems.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {OSU Center for Applied Systems and Software}{Corvallis, OR}
+      {Student Software Developer}{Feb. 2022 - July 2024}
+      \resumeItemListStart
+        \resumeItem{Microservices Architecture Migration}
+          {Led enterprise-scale migration from monolithic system to microservices architecture using .NET Core, designed event-driven communication patterns with ActiveMQ message broker, implemented API gateway for service orchestration achieving independent service deployment and horizontal scalability.}
+        \resumeItem{Full-Stack Development}
+          {Built SPAs using Vue.js 3 Composition API with Vuex state management and TypeScript for type safety, developed RESTful APIs with .NET Core and Entity Framework enabling asynchronous inter-service communication patterns.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Twitter Clone | \href{https://github.com/alihanbays/twitter-clone}{github.com/alihanbays/twitter-clone}}
+      {Full-stack social media platform with C\#/.NET 8/ASP.NET Core featuring OAuth authentication, many-to-many relationship modeling for follow system, and RESTful API architecture. Implemented complex SQL queries with Entity Framework Core and SQLite for dynamic timeline rendering.}
+    \resumeSubItem{Daily LeetCode Scraper | \href{https://github.com/alihanbays/Daily-LeetCode-Scraper}{github.com/alihanbays/Daily-LeetCode-Scraper}}
+      {Automated C\# .NET scraper integrating LeetCode API with Microsoft Teams webhooks, deployed on Raspberry Pi with cron scheduling. Built to facilitate team-wide daily coding practice and collaboration.}
+    \resumeSubItem{SDL3 Pong | \href{https://github.com/alihanbays/SDL3-Pong}{github.com/alihanbays/SDL3-Pong}}
+      {Recreation of classic Pong using C++ and SDL3 (Simple DirectMedia Layer), implementing real-time game loop architecture, collision detection algorithms, and 2D rendering. Demonstrates low-level systems programming and graphics fundamentals.}
+  \resumeSubHeadingListEnd
+
+%
+%--------PROGRAMMING SKILLS------------
+\section{Technical Skills}
+ \resumeSubHeadingListStart
+   \item{
+     \textbf{Languages}{: C\#, Python, TypeScript, JavaScript, SQL, C++}
+   }
+   \item{
+     \textbf{Cloud}{: AWS (Lambda, RDS, S3)} 
+   }
+   \item{
+     \textbf{Backend}{: .NET Core 8, ASP.NET Core, Entity Framework Core, RESTful APIs, OAuth2.0, FHIR/HL7, ActiveMQ}
+   }
+   \item{
+     \textbf{Frontend \& Data}{: Vue.js 3, TypeScript, Razor Pages, SQL Server, PostgreSQL}
+   }
+   \item{
+     \textbf{Certifications}{: AWS Certified AI Practitioner, AWS Certified Cloud Practitioner, Unity Certified Game Programmer}
+   }
+ \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
