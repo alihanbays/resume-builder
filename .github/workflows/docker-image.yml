@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Compile Resume PDF
 
 on:
   push:
@@ -13,14 +13,10 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v4
-      - name: Run the build process with Docker
-        uses: addnab/docker-run-action@v3
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v3
         with:
-          image: thomasweise/docker-texlive-full:latest
-          options: -v ${{ github.workspace }}:/data
-          run: |
-            cd data
-            pdflatex alihan_baysal_resume.tex
+          root_file: alihan_baysal_resume.tex
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: Apply pdflatex changes
