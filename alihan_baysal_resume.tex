@@ -90,22 +90,22 @@
       {Blue Cross of Idaho (via In Time Tec)}{Los Angeles, CA}
       {Full Stack Engineer}{Oct. 2024 - Present}
       \resumeItemListStart
-        \resumeItem{Cloud-Native API Architecture at Scale}
-          {Designed and deployed high-availability RESTful APIs on AWS (Lambda, API Gateway, RDS, S3, CloudWatch) with OAuth2.0 authentication and circuit breaker patterns, serving thousands of concurrent users across HIPAA-compliant patient data systems while maintaining 99.9\% uptime through automated monitoring and alerting.}
-        \resumeItem{Event-Driven Data Processing Pipeline}
-          {Engineered asynchronous HL7 FHIR-compliant data transformation services using AWS Lambda and SQS for real-time healthcare data exchange across distributed systems, implementing comprehensive data validation, dead-letter queue retry mechanisms, and CloudWatch dashboards reducing incident response time by 40\%.}
-        \resumeItem{Large-Scale Data Migration \& Operations}
-          {Owned end-to-end ETL pipeline migrating 10M+ patient records from on-premises databases to AWS cloud using Glue and Database Migration Service, implementing Change Data Capture (CDC) for real-time synchronization with zero production downtime and automated data integrity validation.}
+        \resumeItem{Production API Services at Scale}
+          {Designed, built, and maintained high-availability REST API services on AWS (Lambda, API Gateway, RDS, S3, CloudWatch) with OAuth2.0 authentication, API versioning, and circuit breaker patterns, serving thousands of concurrent users while maintaining 99.9\% uptime through enhanced observability, alerting, and comprehensive test coverage.}
+        \resumeItem{Event-Driven Data Pipelines}
+          {Engineered asynchronous data pipeline services using Python, AWS Lambda, and SQS/SNS across distributed microservices for real-time data exchange, implementing data validation, dead-letter queue retry mechanisms, and CloudWatch dashboards that reduced incident response time by 40\%. Improved system reliability through automated testing and monitoring.}
+        \resumeItem{Cloud Infrastructure \& Data Operations}
+          {Owned end-to-end ETL pipeline migrating 10M+ records to AWS cloud (RDS/PostgreSQL) with zero production downtime. Managed deployments using Docker containers and CI/CD pipelines with GitHub Actions, implementing infrastructure as code patterns and Change Data Capture (CDC) for real-time data synchronization.}
       \resumeItemListEnd
 
     \resumeSubheading
       {OSU Center for Applied Systems and Software}{Corvallis, OR}
       {Software Developer}{Feb. 2022 - July 2024}
       \resumeItemListStart
-        \resumeItem{Event-Driven Microservices Migration}
-          {Led enterprise-scale decomposition of monolithic system into event-driven microservices architecture using .NET Core, designing asynchronous messaging patterns with ActiveMQ broker and API gateway orchestration, reducing deployment cycles by 60\% and enabling independent horizontal scaling across 8+ services.}
-        \resumeItem{Internal Tooling \& Full-Stack Development}
-          {Built internal web applications and admin tools for operations teams using Vue.js 3 with TypeScript, developed RESTful backend services with comprehensive test suites and CI/CD pipelines, delivering features on tight schedules while enforcing code quality through systematic code reviews and documentation.}
+        \resumeItem{Event-Driven Microservices \& Distributed Messaging}
+          {Led decomposition of monolithic system into event-driven microservices using C\#/.NET Core, designing asynchronous messaging patterns with ActiveMQ message broker and API gateway orchestration. Reduced deployment cycles by 60\% and enabled independent horizontal scaling across 8+ containerized services deployed via Docker.}
+        \resumeItem{Backend Services \& Engineering Quality}
+          {Built and maintained RESTful backend services and internal tools using TypeScript and .NET, with PostgreSQL data stores, comprehensive test suites, and CI/CD pipelines. Delivered iteratively in a fast-paced environment, participating in code reviews, technical design discussions, and cross-functional collaboration with product and engineering teams.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -114,12 +114,12 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Social Networking Platform | \href{https://github.com/alihanbays/twitter-clone}{github.com/alihanbays/twitter-clone}}
-      {Full-stack real-time social media application with C\#/.NET 8/ASP.NET Core featuring OAuth authentication, follower graph modeling with many-to-many relationships, dynamic feed aggregation, and RESTful API design. Optimized complex queries with Entity Framework Core for timeline rendering at scale.}
-    \resumeSubItem{Automated API Integration Service | \href{https://github.com/alihanbays/Daily-LeetCode-Scraper}{github.com/alihanbays/Daily-LeetCode-Scraper}}
-      {Python-based automated service integrating external REST APIs with Microsoft Teams webhooks for real-time notifications, deployed on Linux with cron scheduling for reliable daily execution. Demonstrates API integration, error handling, and operational automation patterns.}
+    \resumeSubItem{Real-Time Social Data Platform | \href{https://github.com/alihanbays/twitter-clone}{github.com/alihanbays/twitter-clone}}
+      {Backend data service with C\#/.NET 8/ASP.NET Core featuring REST API design with OAuth authentication and versioning, complex relational data modeling with PostgreSQL, real-time feed aggregation, and optimized database queries for content rendering at scale. Deployed with Docker containers.}
+    \resumeSubItem{Event-Driven API Integration Service | \href{https://github.com/alihanbays/Daily-LeetCode-Scraper}{github.com/alihanbays/Daily-LeetCode-Scraper}}
+      {Python-based backend service integrating multiple external REST APIs with webhook-driven real-time notifications, deployed on Linux with scheduled automation. Built with structured error handling, retry logic, and observability patterns for reliable production operation.}
     \resumeSubItem{Real-Time Systems Engine | \href{https://github.com/alihanbays/SDL3-Pong}{github.com/alihanbays/SDL3-Pong}}
-      {High-performance application built with C++ and SDL3 implementing real-time event loop architecture, collision detection algorithms, and frame-rate independent rendering. Demonstrates low-level systems programming, memory management, and performance optimization.}
+      {High-performance application built with C++ implementing real-time event loop architecture, collision detection algorithms, and frame-rate independent rendering. Demonstrates low-level systems programming, memory management, and performance optimization.}
   \resumeSubHeadingListEnd
 
 %
@@ -127,13 +127,13 @@
 \section{Technical Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: Python, C\#, TypeScript, JavaScript, SQL, C++}
+     \textbf{Languages}{: C\#, Python, TypeScript, JavaScript, SQL, C++}
    }
    \item{
-     \textbf{Cloud \& Infrastructure}{: AWS (Lambda, API Gateway, S3, RDS, SQS, CloudWatch, Glue, DMS), Docker, CI/CD Pipelines}
+     \textbf{Cloud \& Infrastructure}{: AWS (Lambda, API Gateway, EKS, S3, RDS, SQS/SNS, DynamoDB, CloudWatch, Glue), Docker, Kubernetes, GitHub Actions, CI/CD Pipelines}
    }
    \item{
-     \textbf{Backend \& Architecture}{: .NET Core 8, ASP.NET Core, Entity Framework Core, RESTful APIs, Event-Driven Architecture, Microservices, Message Queues (ActiveMQ/SQS), OAuth2.0, Vue.js 3, PostgreSQL}
+     \textbf{Backend \& Data}{: .NET Core 8, ASP.NET Core, RESTful \& RPC APIs, Event-Driven Architecture, Microservices, Message Queues (ActiveMQ/SQS/SNS/Kafka), PostgreSQL, Redis, OAuth2.0, Observability \& Alerting}
    }
    \item{
      \textbf{Certifications}{: AWS Certified AI Practitioner, AWS Certified Cloud Practitioner}
