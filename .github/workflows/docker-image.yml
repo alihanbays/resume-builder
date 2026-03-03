@@ -2,11 +2,7 @@ name: Compile Resume PDF
 
 on:
   push:
-    paths:
-      - '*.tex'
   pull_request:
-    paths:
-      - '*.tex'
 
 permissions:
   contents: write
