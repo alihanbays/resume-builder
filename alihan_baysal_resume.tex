@@ -88,24 +88,24 @@
 
     \resumeSubheading
       {Blue Cross of Idaho (via In Time Tec)}{Los Angeles, CA}
-      {Full Stack Engineer}{Oct. 2024 - Present}
+      {Software Engineer}{Oct. 2024 - Present}
       \resumeItemListStart
-        \resumeItem{Cloud-Native API Architecture at Scale}
-          {Designed and deployed high-availability RESTful APIs on AWS (Lambda, API Gateway, RDS, S3, CloudWatch) with OAuth2.0 authentication and circuit breaker patterns, serving thousands of concurrent users across HIPAA-compliant patient data systems while maintaining 99.9\% uptime through automated monitoring and alerting.}
-        \resumeItem{Event-Driven Data Processing Pipeline}
-          {Engineered asynchronous HL7 FHIR-compliant data transformation services using AWS Lambda and SQS for real-time healthcare data exchange across distributed systems, implementing comprehensive data validation, dead-letter queue retry mechanisms, and CloudWatch dashboards reducing incident response time by 40\%.}
-        \resumeItem{Large-Scale Data Migration \& Operations}
-          {Owned end-to-end ETL pipeline migrating 10M+ patient records from on-premises databases to AWS cloud using Glue and Database Migration Service, implementing Change Data Capture (CDC) for real-time synchronization with zero production downtime and automated data integrity validation.}
+        \resumeItem{Large-Scale Web Applications \& Backend Architecture}
+          {Developed, released, and ran large-scale web applications and REST APIs on AWS (Lambda, API Gateway, SQS, RDS, S3), defining backend architecture for a service oriented architecture serving thousands of concurrent users, as measured by 99.9\% uptime and improved reliability, by designing architectural patterns with security best practices and automated monitoring.}
+        \resumeItem{Backend Performance, Scalability \& Reliability}
+          {Improved performance, reliability, and scalability of backend systems by building event-driven processing pipelines using AWS Lambda and SQS message queues, as measured by 40\% reduction in incident response time, by analyzing and improving efficiency and stability of system resources through unit testing, data validation, and operational dashboards.}
+        \resumeItem{Large-Scale Data Migration \& Business Impact}
+          {Owned end-to-end migration of 10M+ records from SQL databases into AWS cloud infrastructure (Glue, DMS), as measured by zero downtime and 100\% data integrity, by evaluating trade-offs to maximize business impact, implementing real-time synchronization, and automated validation at global scale.}
       \resumeItemListEnd
 
     \resumeSubheading
       {OSU Center for Applied Systems and Software}{Corvallis, OR}
       {Software Developer}{Feb. 2022 - July 2024}
       \resumeItemListStart
-        \resumeItem{Event-Driven Microservices Migration}
-          {Led enterprise-scale decomposition of monolithic system into event-driven microservices architecture using .NET Core, designing asynchronous messaging patterns with ActiveMQ broker and API gateway orchestration, reducing deployment cycles by 60\% and enabling independent horizontal scaling across 8+ services.}
-        \resumeItem{Internal Tooling \& Full-Stack Development}
-          {Built internal web applications and admin tools for operations teams using Vue.js 3 with TypeScript, developed RESTful backend services with comprehensive test suites and CI/CD pipelines, delivering features on tight schedules while enforcing code quality through systematic code reviews and documentation.}
+        \resumeItem{Monolith to Microservice-Based Architecture}
+          {Led the transition of a monolithic codebase to a microservice-based architecture with service oriented design, as measured by 60\% reduction in deployment cycles and horizontal scaling across 8+ services, by defining backend architecture with asynchronous messaging (ActiveMQ/RabbitMQ-pattern queues), REST APIs, and architectural design for a large-scale infrastructure system.}
+        \resumeItem{Cross-Functional Web Application Development}
+          {Collaborated cross-functionally to develop large-scale web applications using modern web stacks (HTTP, REST) with Vue.js 3 and TypeScript, as measured by improved reliability and feature velocity, by writing REST APIs with unit testing, CI/CD pipelines, and enforcing code quality through systematic code reviews.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -114,12 +114,12 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
+    \resumeSubItem{Video Streaming Platform | \href{https://github.com/alihanbays/youtube-clone}{github.com/alihanbays/youtube-clone}}
+      {Backend microservice for video processing built with TypeScript, Node.js/Express, and FFmpeg, containerized with Docker and deployed on Google Cloud with Redis caching. Built scalable REST APIs with SQL and NoSQL data layers for video transcoding across multiple services.}
     \resumeSubItem{Social Networking Platform | \href{https://github.com/alihanbays/twitter-clone}{github.com/alihanbays/twitter-clone}}
-      {Full-stack real-time social media application with C\#/.NET 8/ASP.NET Core featuring OAuth authentication, follower graph modeling with many-to-many relationships, dynamic feed aggregation, and RESTful API design. Optimized complex queries with Entity Framework Core for timeline rendering at scale.}
-    \resumeSubItem{Automated API Integration Service | \href{https://github.com/alihanbays/Daily-LeetCode-Scraper}{github.com/alihanbays/Daily-LeetCode-Scraper}}
-      {Python-based automated service integrating external REST APIs with Microsoft Teams webhooks for real-time notifications, deployed on Linux with cron scheduling for reliable daily execution. Demonstrates API integration, error handling, and operational automation patterns.}
-    \resumeSubItem{Real-Time Systems Engine | \href{https://github.com/alihanbays/SDL3-Pong}{github.com/alihanbays/SDL3-Pong}}
-      {High-performance application built with C++ and SDL3 implementing real-time event loop architecture, collision detection algorithms, and frame-rate independent rendering. Demonstrates low-level systems programming, memory management, and performance optimization.}
+      {Large-scale web application with C\#/.NET 8 featuring REST API design, OAuth authentication, SQL database modeling with PostgreSQL, dynamic feed aggregation, and architectural design. Analyzed and improved query efficiency for scalable timeline rendering.}
+    \resumeSubItem{Python API Integration Service | \href{https://github.com/alihanbays/Daily-LeetCode-Scraper}{github.com/alihanbays/Daily-LeetCode-Scraper}}
+      {Python backend service integrating external REST APIs with webhook notifications for real-time data delivery, deployed on Linux with automated scheduling. Built with unit testing, error handling, and operational reliability patterns.}
   \resumeSubHeadingListEnd
 
 %
@@ -127,13 +127,13 @@
 \section{Technical Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: Python, C\#, TypeScript, JavaScript, SQL, C++}
+     \textbf{Languages}{: Python, TypeScript, JavaScript, C\#, SQL, C++}
    }
    \item{
-     \textbf{Cloud \& Infrastructure}{: AWS (Lambda, API Gateway, S3, RDS, SQS, CloudWatch, Glue, DMS), Docker, CI/CD Pipelines}
+     \textbf{Cloud \& Infrastructure}{: AWS (Lambda, API Gateway, S3, RDS, SQS, CloudWatch, Glue, DMS), Google Cloud, Docker, CI/CD Pipelines, Monitoring \& Alerting}
    }
    \item{
-     \textbf{Backend \& Architecture}{: .NET Core 8, ASP.NET Core, Entity Framework Core, RESTful APIs, Event-Driven Architecture, Microservices, Message Queues (ActiveMQ/SQS), OAuth2.0, Vue.js 3, PostgreSQL}
+     \textbf{Backend \& Architecture}{: Service Oriented Architecture, Microservices, REST APIs, Architectural Design, Unit Testing, Event-Driven Architecture, Message Queues (SQS/ActiveMQ/RabbitMQ), Modern Web Stacks (HTTP, REST), Node.js/Express, .NET Core 8, PostgreSQL, Redis, Elasticsearch}
    }
    \item{
      \textbf{Certifications}{: AWS Certified AI Practitioner, AWS Certified Cloud Practitioner}
