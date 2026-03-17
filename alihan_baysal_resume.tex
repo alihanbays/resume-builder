@@ -22,7 +22,7 @@
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
 
@@ -78,7 +78,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Oregon State University}{Corvallis, OR}
-      {Bachelor of Science in Computer Science}{Sept. 2019 -- Mar. 2024}
+      {Bachelor of Science in Computer Science}{September 2019 -- July 2024}
   \resumeSubHeadingListEnd
 
 
@@ -88,24 +88,24 @@
 
     \resumeSubheading
       {Blue Cross of Idaho (via In Time Tec)}{Los Angeles, CA}
-      {Full Stack Engineer}{Oct. 2024 - Present}
+      {Software Engineer}{October 2024 - Present}
       \resumeItemListStart
-        \resumeItem{Cloud-Native API Architecture at Scale}
-          {Designed and deployed high-availability RESTful APIs on AWS (Lambda, API Gateway, RDS, S3, CloudWatch) with OAuth2.0 authentication and circuit breaker patterns, serving thousands of concurrent users across HIPAA-compliant patient data systems while maintaining 99.9\% uptime through automated monitoring and alerting.}
-        \resumeItem{Event-Driven Data Processing Pipeline}
-          {Engineered asynchronous HL7 FHIR-compliant data transformation services using AWS Lambda and SQS for real-time healthcare data exchange across distributed systems, implementing comprehensive data validation, dead-letter queue retry mechanisms, and CloudWatch dashboards reducing incident response time by 40\%.}
-        \resumeItem{Large-Scale Data Migration \& Operations}
-          {Owned end-to-end ETL pipeline migrating 10M+ patient records from on-premises databases to AWS cloud using Glue and Database Migration Service, implementing Change Data Capture (CDC) for real-time synchronization with zero production downtime and automated data integrity validation.}
+        \resumeItem{Complex Distributed Systems \& State Management}
+          {Designed and implemented distributed systems on AWS handling real-time state management and feedback loops across multiple services, as measured by 99.9\% uptime for thousands of concurrent users, by taking ownership of technical architecture and iterating on fault-tolerant solutions in a fast-moving environment.}
+        \resumeItem{Evaluation \& Experimentation Pipelines}
+          {Built evaluation and experimentation pipelines for real-time data processing using Python and AWS (Lambda, SQS), as measured by 40\% reduction in incident response time, by exploring different approaches to validation and control, implementing automated monitoring, and clear documentation for internal reviews.}
+        \resumeItem{Autonomous Problem Ownership}
+          {Took ownership of an undefined technical problem, independently designing and delivering the migration of 10M+ records to cloud infrastructure, as measured by zero downtime and 100\% data integrity, by reasoning about complex system state and building automated validation pipelines from scratch.}
       \resumeItemListEnd
 
     \resumeSubheading
       {OSU Center for Applied Systems and Software}{Corvallis, OR}
-      {Software Developer}{Feb. 2022 - July 2024}
+      {Software Developer}{February 2022 - July 2024}
       \resumeItemListStart
-        \resumeItem{Event-Driven Microservices Migration}
-          {Led enterprise-scale decomposition of monolithic system into event-driven microservices architecture using .NET Core, designing asynchronous messaging patterns with ActiveMQ broker and API gateway orchestration, reducing deployment cycles by 60\% and enabling independent horizontal scaling across 8+ services.}
-        \resumeItem{Internal Tooling \& Full-Stack Development}
-          {Built internal web applications and admin tools for operations teams using Vue.js 3 with TypeScript, developed RESTful backend services with comprehensive test suites and CI/CD pipelines, delivering features on tight schedules while enforcing code quality through systematic code reviews and documentation.}
+        \resumeItem{Architecture \& Technical Direction}
+          {Shaped architecture and technical direction by leading the decomposition of a monolithic system into distributed microservices, as measured by 60\% reduction in deployment cycles across 8+ services, by designing asynchronous messaging patterns and collaborating with a small team to iterate on system architecture in an ambiguous, evolving environment.}
+        \resumeItem{Prototyping \& Independent Feature Delivery}
+          {Built prototypes and internal tools independently using Python, TypeScript, and Vue.js 3, translating undefined requirements into maintainable solutions with comprehensive testing and CI/CD, while communicating clearly across departments and challenging assumptions on technical direction.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -114,12 +114,12 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
-    \resumeSubItem{Social Networking Platform | \href{https://github.com/alihanbays/twitter-clone}{github.com/alihanbays/twitter-clone}}
-      {Full-stack real-time social media application with C\#/.NET 8/ASP.NET Core featuring OAuth authentication, follower graph modeling with many-to-many relationships, dynamic feed aggregation, and RESTful API design. Optimized complex queries with Entity Framework Core for timeline rendering at scale.}
-    \resumeSubItem{Automated API Integration Service | \href{https://github.com/alihanbays/Daily-LeetCode-Scraper}{github.com/alihanbays/Daily-LeetCode-Scraper}}
-      {Python-based automated service integrating external REST APIs with Microsoft Teams webhooks for real-time notifications, deployed on Linux with cron scheduling for reliable daily execution. Demonstrates API integration, error handling, and operational automation patterns.}
-    \resumeSubItem{Real-Time Systems Engine | \href{https://github.com/alihanbays/SDL3-Pong}{github.com/alihanbays/SDL3-Pong}}
-      {High-performance application built with C++ and SDL3 implementing real-time event loop architecture, collision detection algorithms, and frame-rate independent rendering. Demonstrates low-level systems programming, memory management, and performance optimization.}
+    \resumeSubItem{Real-Time Game Engine | \href{https://github.com/alihanbays/SDL3-Pong}{github.com/alihanbays/SDL3-Pong}}
+      {Game built from scratch in C++ with SDL3 implementing agent behavior (AI paddle decision-making), real-time game loop with state management, collision detection, and frame-rate independent rendering. Demonstrates simulation tooling, feedback loops, and low-level systems programming.}
+    \resumeSubItem{Agent-Based Pandemic Simulator | \href{https://github.com/alihanbays/pandemic-simulator}{github.com/alihanbays/pandemic-simulator}}
+      {Visual simulation in C++ with raylib where agents propagate infection across a grid using BFS, producing emergent behavior from simple rules. Demonstrates agent-based systems, state propagation, simulation environments, and real-time visualization.}
+    \resumeSubItem{Graphics \& Rendering Engine | \href{https://github.com/alihanbays/opengl-tutorial}{github.com/alihanbays/opengl-tutorial}}
+      {Graphics programming project in C exploring the OpenGL rendering pipeline with vertex/fragment shaders, model rendering, and camera controls. Demonstrates building virtual environments and custom simulation tooling from the ground up.}
   \resumeSubHeadingListEnd
 
 %
@@ -127,16 +127,19 @@
 \section{Technical Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: Python, C\#, TypeScript, JavaScript, SQL, C++}
+     \textbf{Languages}{: C++, Python, C\#, JavaScript, TypeScript, SQL}
    }
    \item{
-     \textbf{Cloud \& Infrastructure}{: AWS (Lambda, API Gateway, S3, RDS, SQS, CloudWatch, Glue, DMS), Docker, CI/CD Pipelines}
+     \textbf{AI \& Systems}{: Reinforcement Learning, Agent-Based Systems, Machine Learning, Complex Systems \& State Management, Simulation Environments, Feedback Loops, Decision-Making \& Control}
    }
    \item{
-     \textbf{Backend \& Architecture}{: .NET Core 8, ASP.NET Core, Entity Framework Core, RESTful APIs, Event-Driven Architecture, Microservices, Message Queues (ActiveMQ/SQS), OAuth2.0, Vue.js 3, PostgreSQL}
+     \textbf{Game Development}{: SDL3, OpenGL, raylib, Unity (Certified Game Programmer), Real-Time Systems, Game AI}
    }
    \item{
-     \textbf{Certifications}{: AWS Certified AI Practitioner, AWS Certified Cloud Practitioner}
+     \textbf{Infrastructure}{: AWS, Docker, CI/CD Pipelines, Distributed Systems, Linux, REST APIs, Microservices}
+   }
+   \item{
+     \textbf{Certifications}{: Unity Certified Game Programmer, AWS Certified AI Practitioner, AWS Certified Cloud Practitioner}
    }
  \resumeSubHeadingListEnd
 
