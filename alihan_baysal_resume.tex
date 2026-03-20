@@ -22,7 +22,7 @@
 \addtolength{\evensidemargin}{-0.375in}
 \addtolength{\textwidth}{1in}
 \addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{1.2in}
 
 \urlstyle{same}
 
@@ -78,7 +78,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Oregon State University}{Corvallis, OR}
-      {Bachelor of Science in Computer Science}{Sept. 2019 -- Mar. 2024}
+      {Bachelor of Science in Computer Science}{September 2019 -- July 2024}
   \resumeSubHeadingListEnd
 
 
@@ -88,24 +88,24 @@
 
     \resumeSubheading
       {Blue Cross of Idaho (via In Time Tec)}{Los Angeles, CA}
-      {Full Stack Engineer}{Oct. 2024 - Present}
+      {Full-Stack Engineer}{October 2024 - Present}
       \resumeItemListStart
-        \resumeItem{Cloud-Native API Architecture at Scale}
-          {Designed and deployed high-availability RESTful APIs on AWS (Lambda, API Gateway, RDS, S3, CloudWatch) with OAuth2.0 authentication and circuit breaker patterns, serving thousands of concurrent users across HIPAA-compliant patient data systems while maintaining 99.9\% uptime through automated monitoring and alerting.}
-        \resumeItem{Event-Driven Data Processing Pipeline}
-          {Engineered asynchronous HL7 FHIR-compliant data transformation services using AWS Lambda and SQS for real-time healthcare data exchange across distributed systems, implementing comprehensive data validation, dead-letter queue retry mechanisms, and CloudWatch dashboards reducing incident response time by 40\%.}
-        \resumeItem{Large-Scale Data Migration \& Operations}
-          {Owned end-to-end ETL pipeline migrating 10M+ patient records from on-premises databases to AWS cloud using Glue and Database Migration Service, implementing Change Data Capture (CDC) for real-time synchronization with zero production downtime and automated data integrity validation.}
+        \resumeItem{End-to-End Internal Web Applications \& High-Traffic APIs}
+          {Developed end-to-end internal web applications and distributed services supporting high-traffic APIs on AWS (Lambda, API Gateway, SQS, RDS, S3), as measured by 99.9\% uptime serving thousands of concurrent users, by leading technical design with long-term maintainability and scalability, automated testing, and CI/CD deployment tooling.}
+        \resumeItem{Software Quality \& Technical Standards}
+          {Created high-quality software through unit, functional, and integration testing for event-driven distributed services, as measured by 40\% reduction in incident response time, by establishing higher technical standards via design reviews, best practices for data validation, and automated deployment pipelines.}
+        \resumeItem{Scalable Infrastructure \& Automated Deployment}
+          {Owned end-to-end migration of 10M+ records to cloud infrastructure (AWS Glue, DMS), as measured by zero downtime and 100\% data integrity, by designing automated testing and deployment tooling with real-time synchronization and CI/CD pipelines for web infrastructure.}
       \resumeItemListEnd
 
     \resumeSubheading
       {OSU Center for Applied Systems and Software}{Corvallis, OR}
-      {Software Developer}{Feb. 2022 - July 2024}
+      {Software Developer}{February 2022 - July 2024}
       \resumeItemListStart
-        \resumeItem{Event-Driven Microservices Migration}
-          {Led enterprise-scale decomposition of monolithic system into event-driven microservices architecture using .NET Core, designing asynchronous messaging patterns with ActiveMQ broker and API gateway orchestration, reducing deployment cycles by 60\% and enabling independent horizontal scaling across 8+ services.}
-        \resumeItem{Internal Tooling \& Full-Stack Development}
-          {Built internal web applications and admin tools for operations teams using Vue.js 3 with TypeScript, developed RESTful backend services with comprehensive test suites and CI/CD pipelines, delivering features on tight schedules while enforcing code quality through systematic code reviews and documentation.}
+        \resumeItem{Distributed Services \& Technical Architecture}
+          {Led technical design and architecture for complex distributed systems by decomposing a monolithic application into scalable microservices, as measured by 60\% reduction in deployment cycles and horizontal scaling across 8+ services, by designing asynchronous messaging patterns emphasizing long-term maintainability and scalability.}
+        \resumeItem{Full-Stack Internal Web Applications}
+          {Developed end-to-end internal web applications using TypeScript and Vue.js 3, collaborating with product, UX, and quality teams on player experience, as measured by improved deployment reliability, by creating high-quality software through unit and integration testing, CI/CD pipelines, and elevating technical standards via systematic code reviews.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -114,12 +114,12 @@
 %-----------PROJECTS-----------------
 \section{Projects}
   \resumeSubHeadingListStart
+    \resumeSubItem{Video Streaming Platform | \href{https://github.com/alihanbays/youtube-clone}{github.com/alihanbays/youtube-clone}}
+      {Full-stack web application with TypeScript and Node.js/Express backend, containerized with Docker and deployed on cloud infrastructure. Built distributed services with scalable REST APIs for video transcoding, demonstrating modern full-stack development and automated deployment.}
     \resumeSubItem{Social Networking Platform | \href{https://github.com/alihanbays/twitter-clone}{github.com/alihanbays/twitter-clone}}
-      {Full-stack real-time social media application with C\#/.NET 8/ASP.NET Core featuring OAuth authentication, follower graph modeling with many-to-many relationships, dynamic feed aggregation, and RESTful API design. Optimized complex queries with Entity Framework Core for timeline rendering at scale.}
-    \resumeSubItem{Automated API Integration Service | \href{https://github.com/alihanbays/Daily-LeetCode-Scraper}{github.com/alihanbays/Daily-LeetCode-Scraper}}
-      {Python-based automated service integrating external REST APIs with Microsoft Teams webhooks for real-time notifications, deployed on Linux with cron scheduling for reliable daily execution. Demonstrates API integration, error handling, and operational automation patterns.}
-    \resumeSubItem{Real-Time Systems Engine | \href{https://github.com/alihanbays/SDL3-Pong}{github.com/alihanbays/SDL3-Pong}}
-      {High-performance application built with C++ and SDL3 implementing real-time event loop architecture, collision detection algorithms, and frame-rate independent rendering. Demonstrates low-level systems programming, memory management, and performance optimization.}
+      {Player-facing web application with C\#/.NET 8 featuring OAuth authentication, follower graph modeling, dynamic feed aggregation, and RESTful API design. Optimized complex queries for scalable timeline rendering with long-term maintainability.}
+    \resumeSubItem{Python API Integration Service | \href{https://github.com/alihanbays/Daily-LeetCode-Scraper}{github.com/alihanbays/Daily-LeetCode-Scraper}}
+      {Automated service integrating third-party REST APIs with real-time webhook notifications, deployed on Linux with automated scheduling. Demonstrates service integration, error handling, and automated testing patterns.}
   \resumeSubHeadingListEnd
 
 %
@@ -127,13 +127,16 @@
 \section{Technical Skills}
  \resumeSubHeadingListStart
    \item{
-     \textbf{Languages}{: Python, C\#, TypeScript, JavaScript, SQL, C++}
+     \textbf{Languages}{: TypeScript, JavaScript, Go, Python, C\#, C++, SQL}
    }
    \item{
-     \textbf{Cloud \& Infrastructure}{: AWS (Lambda, API Gateway, S3, RDS, SQS, CloudWatch, Glue, DMS), Docker, CI/CD Pipelines}
+     \textbf{Full-Stack \& Frontend}{: Next.js, Vue.js 3, Node.js/Express, Modern Full-Stack Development, RESTful APIs, OAuth2.0}
    }
    \item{
-     \textbf{Backend \& Architecture}{: .NET Core 8, ASP.NET Core, Entity Framework Core, RESTful APIs, Event-Driven Architecture, Microservices, Message Queues (ActiveMQ/SQS), OAuth2.0, Vue.js 3, PostgreSQL}
+     \textbf{Infrastructure \& DevOps}{: AWS (Lambda, API Gateway, S3, RDS, SQS, CloudWatch), Docker, CI/CD Pipelines, Automated Testing \& Deployment, Web Infrastructure, Distributed Services}
+   }
+   \item{
+     \textbf{Architecture}{: Microservices, Event-Driven Architecture, Long-Term Maintainability \& Scalability, .NET Core 8, PostgreSQL}
    }
    \item{
      \textbf{Certifications}{: AWS Certified AI Practitioner, AWS Certified Cloud Practitioner}
